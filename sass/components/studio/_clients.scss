@@ -1,0 +1,37 @@
+/*----------KLIENTS----------*/
+
+
+.klient__list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.klient__link {
+    display: inline-block;
+    padding: 16px 32px;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--icons-color);
+    border-radius: 4px;
+
+    color: var(--icons-color);
+
+    transition-property: color, border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.klient__icon {
+    text-align: center;
+    width: 106px;
+    height: 60px;
+    fill: currentColor;
+}
+
+.klient__link:hover,
+.klient__link:focus {
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}

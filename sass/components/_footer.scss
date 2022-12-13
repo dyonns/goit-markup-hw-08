@@ -1,0 +1,153 @@
+/*----------FOOTER----------*/
+
+/*----------LOGO/ADDRESS----------*/
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: var(--secondary-bg-color);
+
+    & .container {
+        display: flex;
+    }
+
+    &__logo {
+        display: inline-block;
+        margin-bottom: 20px;
+
+        color: var(--primary-white-color);
+
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+    }
+
+
+    &__logo span {
+        color: var(--accent-color);
+    }
+}
+
+
+ 
+.address__link-map {
+    color: var(--primary-white-color);
+    line-height: 1.71;
+    font-style: normal;
+
+}
+
+.address__link {
+    line-height: 1.71;
+    font-style: normal;
+
+    color: var(--background-adress-color);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.address__locat {
+    margin-bottom: 9px;
+}
+
+.address__locat:last-child {
+    margin-bottom: 0;
+}
+
+.address__link:hover,
+.address__link:focus {
+    color: var(--accent-color);
+}
+
+
+
+/*----------MEDIA----------*/
+
+
+.media {
+    margin-left: 70px;
+    margin-top: 12px;
+
+    & .section__title-h3 {
+        padding-bottom: 20px;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__icon {
+        height: 44px;
+        width: 44px;
+    }
+
+    &__link {
+        display: inline-block;
+        padding: 12px;
+        border-radius: 50%;
+
+        background: rgba(255, 255, 255, 0.1);
+        color: var(--primary-white-color);
+
+        transition-property: background;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            background: var(--accent-color);
+        }
+
+        & svg {
+            height: 20px;
+            width: 20px;
+            fill: currentColor;
+        }
+    }    
+
+    &__wrap {
+        position: relative;
+    }
+
+    &__svg {
+        display: flex;
+        align-items: center;
+    }
+
+    &__svg svg {
+        padding-left: 10px;
+    }
+
+    &__input {
+        outline: transparent;
+        padding-left: 16px;
+        margin-right: 12px;
+        width: 385px;
+        height: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        background-color: rgba(0, 0, 0, 0);
+
+        font-size: 16px;
+        line-height: 1.25;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    &__mail {
+        display: flex;
+        align-items: center;
+
+        & .button.primery-button {
+            width: 200px;
+            height: 50px;
+        }
+    }
+}
+

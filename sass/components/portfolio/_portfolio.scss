@@ -1,0 +1,113 @@
+/*----------portfolio__---------*/
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    &__button-term:not(:last-child) {
+        margin-right: 8px;
+    }
+
+    &__menu {
+        padding-left: 24px;
+
+        background: #FFFFFF;
+        border: 1px solid #EEEEEE;
+
+        border-top: 0;
+    }
+
+    &__section {
+        padding-top: 0;
+        margin-bottom: 20px;
+        margin-right: 20px;
+
+        width: 370px;
+
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+    
+        &:nth-last-child(-n+3) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__link {
+        display: block;
+
+        transition-property: box-shadow;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+            0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+    
+        &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+            0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+    }
+
+
+    &__img {
+        padding: 0;
+        padding: 0;
+    }
+
+    &__link:hover &__img-text {
+        transform: translateY(0);
+    }
+
+    &__link:focus &__img-text {
+        transform: translateY(0);
+    }
+
+    &__img-wrap {
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__img-text {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        padding: 63px 24px;
+        transform: translateY(100%);
+        transition: transform 250ms;
+        animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        background-color: rgba(33, 150, 243, 0.9);
+        color: var(--primary-white-color);
+
+        font-size: 18px;
+        line-height: 1.55;
+    }
+
+    &__name {
+        padding-top: 20px;
+        padding-bottom: 4px;
+
+        color: var(--title-text-color);
+
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+    }
+
+    &__category {
+        padding-bottom: 20px;
+        font-size: 16px;
+        line-height: 1.87;
+        color: var(--primary-text-color);
+    }
+}
+

@@ -1,0 +1,30 @@
+
+
+/*----------UTILS----------*/
+@import './utils/vars';
+@import './utils/hide';
+@import './utils/butons';
+@import './utils/section_title';
+@import './utils/reset';
+@import './utils/container';
+
+
+
+
+/*----------COMPONENTS----------*/
+@import './components/header';
+@import './components/footer';
+@import './components/modal';
+
+/*----------STUDIO----------*/
+@import './components/studio/clients';
+@import './components/studio/team';
+@import './components/studio/activity';
+@import './components/studio/features';
+@import './components/studio/hero';
+
+
+/*----------PORTFOLIO----------*/
+@import './components/portfolio/portfolio';
+
+

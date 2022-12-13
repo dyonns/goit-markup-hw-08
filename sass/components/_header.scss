@@ -1,0 +1,132 @@
+
+/*----------HEADER----------*/
+
+header {
+    border-bottom: 1px solid #ECECEC;
+
+
+    & .container {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.nav {
+    display: flex;
+
+    &__logo {
+        padding-bottom: 25px;
+        padding-top: 24px;
+        margin-right: 93px;
+
+        color: var(--title-text-color);
+
+        font-family: 'Raleway', sans-serif;
+        // font-weight: 700;
+        // font-size: 26px;
+        // line-height: 1.2;
+
+        @include font(26px, 1.2, 700);
+
+    }
+
+    &__logo span {
+        color: var(--accent-color);
+    }
+
+    &__link {
+        display: flex;
+        flex-direction: column;
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+    }
+    &__link-line {
+        display: none;
+        position: relative;
+        top: 1px;
+        height: 4px;
+        width: 105%;
+        border-radius: 2px;
+
+        border: 1px solid var(--accent-color);
+        background: var(--accent-color);
+    }
+}
+
+.contact {
+    margin-left: auto;
+
+    &__link {
+        display: flex;
+        align-items: center;
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+        color: var(--primary-text-color);
+
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+    }
+
+    &__icon {
+        width: 16px;
+        height: 12px;
+        fill: currentColor;
+        margin-right: 10px;
+    }
+}
+
+.nav__list,
+.contact {
+    display: flex;
+    margin-right: 50px;
+}
+
+.nav__list-locat,
+.contact__list {
+    margin-left: 50px;
+}
+
+.nav__list-locat:first-child {
+    margin-left: 0;
+}
+
+.contact__list:first-child {
+    margin-left: 0;
+}
+
+.nav__link,
+.contact__link {
+    color: var(--title-text-color);
+
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.nav__link.current {
+    color: var(--accent-color);
+}
+
+.nav__link-line.current {
+    display: block;
+}
+
+
+
