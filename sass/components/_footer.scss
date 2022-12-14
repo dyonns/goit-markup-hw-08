@@ -9,11 +9,20 @@
 
     & .container {
         display: flex;
+        flex-wrap: wrap;
+        gap: 70px;
+        justify-content: center;
+        
+        @include desktop {
+            justify-content: start;
+            flex-wrap: nowrap;
+        }
     }
 
     &__logo {
         display: inline-block;
         margin-bottom: 20px;
+        
 
         color: var(--primary-white-color);
 
@@ -26,6 +35,19 @@
 
     &__logo span {
         color: var(--accent-color);
+    }
+
+    &__logo-address{
+        text-align: center;
+
+        @include tablet{
+           padding-right: 95px;
+        }
+
+        @include desktop {
+            padding-right: 0;
+            text-align: left;
+        }
     }
 }
 
@@ -69,11 +91,16 @@
 
 
 .media {
-    margin-left: 70px;
+    // margin-left: 70px;
     margin-top: 12px;
 
     & .section__title-h3 {
         padding-bottom: 20px;
+        text-align: center;
+
+        @include desktop {
+            text-align: left;
+        }
     }
 
     &__list {
@@ -115,20 +142,21 @@
         position: relative;
     }
 
-    &__svg {
+    &__button {
         display: flex;
         align-items: center;
+        height: 50px;
     }
 
-    &__svg svg {
-        padding-left: 10px;
+    &__svg {
+        margin: 10px;
+        // padding: 10px;
     }
 
     &__input {
         outline: transparent;
         padding-left: 16px;
-        margin-right: 12px;
-        width: 385px;
+        width: 450px;
         height: 50px;
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 4px;
@@ -138,11 +166,24 @@
         font-size: 16px;
         line-height: 1.25;
         color: rgba(255, 255, 255, 0.6);
+
+        @include desktop {
+            width: 358px;
+        }
     }
 
     &__mail {
         display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
+        gap: 12px;
+
+        @include desktop {
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+
 
         & .button.primery-button {
             width: 200px;

@@ -1,10 +1,4 @@
 
-@mixin font($font-size, $line-height, $font-weight) {
-    font-size: $font-size;
-    line-height: $line-height;
-    font-weight: $font-weight;
-}
-
 
 p,
 ul,
@@ -27,9 +21,16 @@ address {
     font-style: normal;
 }
 
-img,
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+
 svg {
     display: block;
+    max-width: 100%;
 }
 
 body {

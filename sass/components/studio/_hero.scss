@@ -3,39 +3,60 @@
 
 .hero {
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    
+    padding-top: 118px;
+    padding-bottom: 118px;
 
     background-color: var(--secondary-bg-color);
 
+    @include desktop {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+
     &__title {
-    display: flex;
     margin: 0 auto;
     margin-bottom: 30px;
-    max-width: 780px;
+    max-width: 360px;
 
     color: var(--primary-white-color);
 
-    
-    @include font(44px, 1.36, 900);
-    // font-weight: 900;
-    // font-size: 44px;
-    // line-height: 1.36;
+    @include font(26px, 1.61, 900);
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @include desktop{
+        max-width: 780px;
+        @include font(44px, 1.36, 900);
+        }
     }
 }
 
 .overlay {
     background-color: var(--background-picture);
-    background-image: linear-gradient(to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url('../images/HeroBackground.png');
-
+    background-image: var(--bd-gradient), url('../images/HeroBackground-mob.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-size: 1600px;
+
+    @include retina{
+        background-image: var(--bd-gradient), url('../images/HeroBackground-mob-2x.jpg');
+    }
+
+    @include tablet{
+        background-image: var(--bd-gradient), url('../images/HeroBackground-tablet.jpg');
+        
+        @include retina {
+            background-image: var(--bd-gradient), url('../images/HeroBackground-tablet-2x.jpg');
+        }
+    
+    @include desktop {
+        background-image: var(--bd-gradient), url('../images/HeroBackground-desktop.jpg');
+
+        @include retina {
+            background-image: var(--bd-gradient), url('../images/HeroBackground-desktop-2x.jpg');
+        }
+}
+}
 }
 

@@ -1,6 +1,7 @@
 
 
 /*----------UTILS----------*/
+@import './utils/mixin';
 @import './utils/vars';
 @import './utils/hide';
 @import './utils/butons';
@@ -9,19 +10,18 @@
 @import './utils/container';
 
 
-
-
 /*----------COMPONENTS----------*/
 @import './components/header';
 @import './components/footer';
 @import './components/modal';
 
 /*----------STUDIO----------*/
+@import './components/studio/hero';
 @import './components/studio/clients';
 @import './components/studio/team';
 @import './components/studio/activity';
 @import './components/studio/features';
-@import './components/studio/hero';
+
 
 
 /*----------PORTFOLIO----------*/
