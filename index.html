@@ -142,14 +142,20 @@
                     <h2 class="section__title">Чим ми займаємося</h2>
                     <ul class="activity list">
                         <li class="activity__pos">
-                            <img src="./images/WhatWeDo1.jpg" alt="Те чим ми займаємось" width="370" height="294">
+                            <picture>
+                                <source srcset="./images/WhatWeDo1.jpg 1x, ./images/WhatWeDo1-2x.jpg 2x">
+                                <img src="./images/WhatWeDo1.jpg" alt="Те чим ми займаємось" width="370" height="294">
+                            </picture>
+
                             <h3 class="activity__name">Десктопні додатки</h3>
                         </li>
                         <li class="activity__pos">
+                            <source srcset="./images/WhatWeDo2.jpg 1x, ./images/WhatWeDo2-2x.jpg 2x">
                             <img src="./images/WhatWeDo2.jpg" alt="Те чим ми займаємось" width="370" height="294">
                             <h3 class="activity__name">Мобільні додатки</h3>
                         </li>
                         <li class="activity__pos">
+                            <source srcset="./images/WhatWeDo3.jpg 1x, ./images/WhatWeDo3-2x.jpg 2x">
                             <img src="./images/WhatWeDo3.jpg" alt="Те чим ми займаємось" width="370" height="294">
                             <h3 class="activity__name">Дизайнерські рішення</h3>
                         </li>
@@ -162,7 +168,9 @@
                     <h2 class="section__title">Наша команда</h2>
                     <ul class="team list">
                         <li class="team__content">
-                            <img class="team__photo" src="./images/OurTeam1.jpg" alt="Ігор Дем'яненко" width="270" height="260">
+                            <picture>
+                                <source srcset="./images/OurTeam1.jpg, ./images/OurTeam1-2x.jpg">
+                                <img class="team__photo" src="./images/OurTeam1.jpg" alt="Ігор Дем'яненко" width="270" height="260"></picture>
                             <h3 class="team__name">Ігор Дем'яненко</h3>
                             <p class="team__position" lang="en">Product Designer</p>
 
@@ -200,7 +208,9 @@
                             
                         </li>   
                         <li class="team__content">
-                            <img class="team__photo" src="./images/OurTeam2.jpg" alt="Ольга Рєпіна" width="270" height="260">
+                            <picture>
+                                <source srcset="./images/OurTeam2.jpg, ./images/OurTeam2-2x.jpg">
+                                <img class="team__photo" src="./images/OurTeam2.jpg" alt="Ольга Рєпіна" width="270" height="260"></picture>                                
                             <h3 class="team__name">Ольга Рєпіна</h3>
                             <p class="team__position" lang="en">Frontend Developer</p>
                             <ul class="team__social list">
@@ -236,7 +246,9 @@
                             </ul>
                         </li>
                         <li class="team__content">
-                            <img class="team__photo" src="./images/OurTeam3.jpg" alt="Микола Тарасов" width="270" height="260">
+                            <picture>
+                                <source srcset="./images/OurTeam3.jpg, ./images/OurTeam3-2x.jpg">
+                                <img class="team__photo" src="./images/OurTeam3.jpg" alt="Микола Тарасов" width="270" height="260"></picture>
                             <h3 class="team__name">Микола Тарасов</h3>
                             <p class="team__position" lang="en">Marketing</p>
                             <ul class="team__social list">
@@ -272,7 +284,9 @@
                             </ul>
                         </li>
                         <li class="team__content">
-                            <img class="team__photo" src="./images/OurTeam4.jpg" alt="Михайло Єрмаков" width="270" height="260">
+                            <picture>
+                                <source srcset="./images/OurTeam4.jpg, ./images/OurTeam4-2x.jpg">
+                                <img class="team__photo" src="./images/OurTeam4.jpg" alt="Михайло Єрмаков" width="270" height="260"></picture>
                             <h3 class="team__name">Михайло Єрмаков</h3>
                             <p class="team__position" lang="en">UI Designer</p>
                             <ul class="team__social list">
@@ -317,7 +331,7 @@
                     <ul class="klient__list list">
                         <li class="klient__name">
                             <a class="klient__link link" href="/">
-                                <svg class="klient__icon">
+                                <svg class="klient__icon">                                    
                                     <use href="./images/icons.svg#icon-client1"></use>
                                 </svg>
                             </a>
