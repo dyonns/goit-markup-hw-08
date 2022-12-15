@@ -1,16 +1,12 @@
 
 .container {
-    // width: 1200px;
+    max-width: 450px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
 
-    @include media(480) {
-        max-width: 448px;
-    }
-
     @include media(768) {
-        max-width: 720px;
+        max-width: 728px;
     }
 
     @include media(1200) {
@@ -22,11 +18,6 @@
 .section {
     padding-top: 60px;
     padding-bottom: 60px;
-
-    @include tablet {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
 
     @include desktop {
         padding-top: 94px;

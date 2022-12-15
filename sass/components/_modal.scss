@@ -22,14 +22,23 @@
     pointer-events: none;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 ::placeholder {
     color: rgba(117, 117, 117, 0.5);
 }
 
 .modal {
     padding: 40px;
-    width: 528px;
-    min-height: 581px;
+    width: 450px;
+    min-height: 609px;
+
+    @include desktop {
+        width: 528px;
+        min-height: 581px;
+    }
 
 
     background-color: var(--primary-white-color);
@@ -146,14 +155,25 @@
 
     &__text {
         display: flex;
+        align-items: center;
+        &-mobile {
+            @include font(12px, 1.16, 400);
+
+            @include desktop {
+                @include font(14px, 1.84px, 400);
+            }
+        }
     }
 
     &__check {
         position: relative;
         margin-bottom: 10px;
         margin-top: 20px;
-        margin-left: 20px;
         margin-bottom: 30px;
+
+        @include desktop {
+            margin-left: 20px;
+        }
     }
 
     &__text a {
@@ -171,12 +191,6 @@
         border: 2px solid black;
         border-radius: 3px;
         margin-right: 5px;
-    
-
-        @include font(14px, 1.84px,400);
-        // font-weight: 400;
-        // font-size: 14px;
-        // line-height: 1.84px;
     }
 
     &__check-hide:checked+&__text span {

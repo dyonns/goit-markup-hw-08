@@ -11,18 +11,18 @@
             rel="stylesheet">
         <link rel="stylesheet" href="./css/main.min.css" />
     </head>
-    
+
     <body>
-        <!-- <header class="header">
-            <div class="container">
-                <nav class="nav">
-                    <a href="/" class="nav__logo link"><span>Web</span>Studio</a>                    
-                    <ul class="nav__list list">
-                        <li class="nav__list-locat"><a href="./index.html" class="nav__link link current">Студія</a><span class="nav__link-line current"></span></li>
-                        <li class="nav__list-locat"><a href="./portfolio.html" class="nav__link link">Портфоліо</a><span class="nav__link-line"></span></li>
-                        <li class="nav__list-locat"><a href="" class="nav__link link">Контакти</a><span class="nav__link-line"></span></li>                    
-                    </ul>
-                </nav>
+        <header class="header">
+            <div class="container container__nav">
+                    <nav class="nav">
+                        <a href="/" class="nav__logo link"><span>Web</span>Studio</a>                    
+                        <ul class="nav__list list">
+                            <li class="nav__list-locat"><a href="./index.html" class="nav__link link current">Студія</a><span class="nav__link-line current"></span></li>
+                            <li class="nav__list-locat"><a href="./portfolio.html" class="nav__link link">Портфоліо</a><span class="nav__link-line"></span></li>
+                            <li class="nav__list-locat"><a href="" class="nav__link link">Контакти</a><span class="nav__link-line"></span></li>                    
+                        </ul>
+                    </nav>
                 <ul class="contact list">
                     <li class="contact__list" >
                             <a href="mailto:info@devstudio.com" class="contact__link link">
@@ -41,8 +41,57 @@
                         </a>
                     </li>
                 </ul>
-            </div>         
-        </header> -->
+                <button type="button" class="open-btn" data-menu-open>
+                    <svg class="open-btn-icon" width="40" height="40">
+                        <use href="./images/icons.svg#icon-menu"></use>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="mob-menu is-hidden" data-menu>
+                <div class="container container__mob">
+                    <div class="mob__menu-top">
+                        <button type="button" class="close-btn" data-menu-close>
+                            <svg class="close-btn-icon" width="40" height="40">
+                                <use href="./images/icons.svg#icon-close"></use>
+                            </svg>
+                        </button>
+                        <nav class="mob-nav">   
+                            <ul class="mob-nav__list list">
+                                <li class="mob-nav__list-locat"><a href="./index.html" class="mob-nav__link link current">Студія</a><span
+                                        class="mob-nav__link-line current"></span></li>
+                                <li class="mob-nav__list-locat"><a href="./portfolio.html" class="mob-nav__link link">Портфоліо</a><span
+                                        class="mob-nav__link-line"></span></li>
+                                <li class="mob-nav__list-locat"><a href="" class="mob-nav__link link">Контакти</a><span class="nav__link-line"></span>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="mob__menu-bot">
+                        <ul class="mob-contact list">                            
+                            <li class="mob-contact__list">
+                                <a href="tel:+380961111111" class="mob-contact__link-phone link">
+                                    +38 096 111 11 11
+                                </a>
+                            </li>
+                            <li class="mob-contact__list">
+                                <a href="mailto:info@devstudio.com" class="mob-contact__link-mail link">
+                                    info@devstudio.com
+                                </a>
+                            </li>
+                            <li>
+                                <ul class="mob__soc list">
+                                    <li class="mob__soc-item"><a href="" class="link mob__soc-link">Instagram</a></li>
+                                    <li class="mob__soc-item"><a href="" class="link mob__soc-link">Twitter</a></li>
+                                    <li class="mob__soc-item"><a href="" class="link mob__soc-link">Facebook</a></li>
+                                    <li class="mob__soc-item"><a href="" class="link mob__soc-link">LinkedIn</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </di >
+            </div>
+        </header>
 
         <main>
             <section class="hero overlay">
@@ -461,8 +510,10 @@
                                         <use href="./images/icons.svg#icon-vector"></use>
                                     </svg>
                                 </span>
-                                Погоджуюся з розсилкою та приймаю&nbsp;
-                                <a href=""> Умови договору </a>
+                                <div class="modal__text-mobile">
+                                    Погоджуюся з розсилкою та приймаю&nbsp;
+                                    <a href=""> Умови договору </a>
+                                </div >
                             </label>
                         </div>
                     </div>
@@ -473,5 +524,6 @@
             </div>
         </div>
         <script src="./JS/modal.js"></script>
+        <script src="./JS/menu.js"></script>
     </body>
 </html>
