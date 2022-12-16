@@ -547,6 +547,7 @@ header .container__nav {
 }
 .media__wrap {
   position: relative;
+  width: 100%;
 }
 .media__button {
   display: flex;
