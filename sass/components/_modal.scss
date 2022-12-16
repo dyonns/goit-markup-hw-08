@@ -32,8 +32,14 @@
 
 .modal {
     padding: 40px;
-    width: 450px;
-    min-height: 609px;
+    width: 90vw;
+    height: 80vh;
+    overflow: scroll;
+
+    @include mobile {
+        width: 450px;
+        min-height: 609px;
+    }
 
     @include desktop {
         width: 528px;

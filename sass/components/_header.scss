@@ -98,7 +98,6 @@ header {
 .contact {
     margin-left: auto;
     display: none;
-    margin-right: 50px;
 
     @media screen and (max-width: 1199px){
         padding-top: 21px;
@@ -220,11 +219,7 @@ header {
 
 }
 
-.open-btn-icon {}
 
-.mob-nav {}
-
-.mob-nav__list {}
 
 .mob-nav__list-locat:not(:last-child) {
     margin-bottom: 32px;
@@ -237,17 +232,15 @@ header {
     letter-spacing: 0.02em;
 
     color: #212121;
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+    &.current {
+        color: var(--accent-color);
+    }
 }
-
-.current {}
-
-.mob-nav__link-line {}
-
-.nav__link-line {}
-
-.mob-contact {}
-
-.mob-contact__list {}
 
 .mob-contact__link-phone {
     display: block;
@@ -277,6 +270,7 @@ header {
 
 .mob__soc {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     padding-bottom: 48px;
 }
