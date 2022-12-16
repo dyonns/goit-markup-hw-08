@@ -143,19 +143,25 @@
                     <ul class="activity list">
                         <li class="activity__pos">
                             <picture>
-                                <source srcset="./images/WhatWeDo1.jpg 1x, ./images/WhatWeDo1-2x.jpg 2x">
+                                <source srcset="./images/WhatWeDo1.jpg 1x, ./images/WhatWeDo1-2x.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="./images/WhatWeDo1.jpg 1x, ./images/WhatWeDo1-2x.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="./images/WhatWeDo1.jpg 1x, ./images/WhatWeDo1-2x.jpg 2x" media="(max-width: 767px)">
                                 <img src="./images/WhatWeDo1.jpg" alt="Те чим ми займаємось" width="370" height="294">
                             </picture>
 
                             <h3 class="activity__name">Десктопні додатки</h3>
                         </li>
                         <li class="activity__pos">
-                            <source srcset="./images/WhatWeDo2.jpg 1x, ./images/WhatWeDo2-2x.jpg 2x">
+                            <source srcset="./images/WhatWeDo2.jpg 1x, ./images/WhatWeDo2-2x.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./images/WhatWeDo2.jpg 1x, ./images/WhatWeDo2-2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/WhatWeDo2.jpg 1x, ./images/WhatWeDo2-2x.jpg 2x" media="(max-width: 767px)">
                             <img src="./images/WhatWeDo2.jpg" alt="Те чим ми займаємось" width="370" height="294">
                             <h3 class="activity__name">Мобільні додатки</h3>
                         </li>
                         <li class="activity__pos">
-                            <source srcset="./images/WhatWeDo3.jpg 1x, ./images/WhatWeDo3-2x.jpg 2x">
+                            <source srcset="./images/WhatWeDo3.jpg 1x, ./images/WhatWeDo3-2x.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./images/WhatWeDo3.jpg 1x, ./images/WhatWeDo3-2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/WhatWeDo3.jpg 1x, ./images/WhatWeDo3-2x.jpg 2x" media="(max-width: 767px)">
                             <img src="./images/WhatWeDo3.jpg" alt="Те чим ми займаємось" width="370" height="294">
                             <h3 class="activity__name">Дизайнерські рішення</h3>
                         </li>
@@ -169,8 +175,12 @@
                     <ul class="team list">
                         <li class="team__content">
                             <picture>
-                                <source srcset="./images/OurTeam1.jpg, ./images/OurTeam1-2x.jpg">
-                                <img class="team__photo" src="./images/OurTeam1.jpg" alt="Ігор Дем'яненко" width="270" height="260"></picture>
+                                <source srcset="./images/OurTeam1.jpg, ./images/OurTeam1-2x.jpg" media="(min-width: 1200px)">
+                                <source srcset="./images/adapt/OurTeam1-tablet.jpg, ./images/adapt/OurTeam1-tablet-2x.jpg" media="(min-width: 768px)"">
+                                <source srcset="./images/adapt/OurTeam1-mob.jpg, ./images/adapt/OurTeam1-mob-2x.jpg" media="(max-width: 767px)">
+                                
+                                <img class="team__photo" src="./images/OurTeam1.jpg" alt="Ігор Дем'яненко" width="450" height="260">
+                            </picture>
                             <h3 class="team__name">Ігор Дем'яненко</h3>
                             <p class="team__position" lang="en">Product Designer</p>
 
