@@ -358,6 +358,12 @@ header .container__nav {
   margin-left: auto;
   display: block;
 }
+.close-btn-icon {
+  fill: #212121;
+}
+.close-btn-icon:focus, .close-btn-icon:hover {
+  fill: var(--accent-color);
+}
 
 .mob-nav__list-locat:not(:last-child) {
   margin-bottom: 32px;

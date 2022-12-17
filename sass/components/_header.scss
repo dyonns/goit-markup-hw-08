@@ -217,6 +217,15 @@ header {
     margin-left: auto;
     display: block;
 
+    &-icon{
+        fill: #212121;
+    }
+
+    &-icon:focus,
+    &-icon:hover{
+        fill: var(--accent-color);
+    }
+
 }
 
 
@@ -288,3 +297,4 @@ header {
 
     color: var(--accent-color);
 }
+
